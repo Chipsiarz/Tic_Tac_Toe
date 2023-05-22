@@ -4,7 +4,43 @@ body {
 }
 
 main {
-  margin-top: 5%;
+  margin-top: 3%;
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.playerScore {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  text-align: center;
+  margin: 0 1%;
+}
+
+#gameResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 220px;
+  border: 3px solid black;
+  font-size: 1.5em;
+}
+
+#xWins span {
+  color: blue;
+  font-size: 1.5em;
+}
+
+#oWins span {
+  color: red;
+  font-size: 1.5em;
 }
 
 table {
@@ -13,8 +49,8 @@ table {
 }
 
 td {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   text-align: center;
   vertical-align: middle;
   border: 1px solid black;
@@ -22,12 +58,12 @@ td {
 
 .x {
   color: blue;
-  font-size: 80px;
+  font-size: 4em;
 }
 
 .o {
   color: red;
-  font-size: 80px;
+  font-size: 4em;
 }
 
 .win {
