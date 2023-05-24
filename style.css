@@ -17,7 +17,7 @@ main {
 }
 
 .playerScore {
-  background-color: #247ba0;
+  background-color: black;
   color: white;
   height: 100px;
   width: 100px;
@@ -27,7 +27,7 @@ main {
 }
 
 #gameResult {
-  background-color: #247ba0;
+  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
@@ -39,17 +39,17 @@ main {
 }
 
 #xWins span {
-  color: blue;
+  color: #1b98e0;
   font-size: 1.5em;
 }
 
 #oWins span {
-  color: red;
+  color: rgb(224, 18, 18);
   font-size: 1.5em;
 }
 
 table {
-  background-color: #247ba0;
+  background-color: black;
   border-collapse: collapse;
   margin: 0 auto;
 }
