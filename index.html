@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <div class="scoreContainer">
-        <div class="playerScore" id="xWins">
-          <p>X Wins:</p>
-          <span id="xScore">0</span>
+        <div class="playerScoreContainer">
+          <div class="playerScore" id="xWins">
+            <p>X</p>
+            <span id="xScore">0</span>
+            wins
+          </div>
+          <div class="playerScore" id="oWins">
+            <p>O</p>
+            <span id="oScore">0</span>
+            wins
+          </div>
         </div>
         <div id="gameResult">Tic Tac Toe Game</div>
-        <div class="playerScore" id="oWins">
-          <p>O Wins:</p>
-          <span id="oScore">0</span>
-        </div>
       </div>
       <div class="gameContainer">
         <table>
@@ -40,7 +50,7 @@
         </table>
       </div>
       <div id="resetContainer">
-        <button id="resetBtn">Reset Game</button>
+        <button id="resetBtn"><i class="bi bi-arrow-clockwise"></i></button>
       </div>
     </main>
 

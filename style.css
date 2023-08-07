@@ -1,10 +1,16 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 body {
-  background-color: #13293d;
   margin: 0;
-  font-family: "Comic Sans MS";
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 main {
+  width: 460px;
+  padding: 30px 0;
+  border: 1px solid #39bcd4;
   margin-top: 3%;
 }
 
@@ -12,45 +18,52 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+}
+
+.playerScoreContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
 }
 
 .playerScore {
-  background-color: black;
-  color: white;
   height: 100px;
   width: 100px;
-  border-radius: 50%;
   text-align: center;
-  margin: 0 1%;
+  font-weight: 600;
+}
+
+.playerScore p {
+  margin: 5px;
+  font-size: 2rem;
 }
 
 #gameResult {
-  background-color: black;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
   width: 220px;
   border-radius: 20px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4c6a86;
 }
 
-#xWins span {
-  color: #1b98e0;
-  font-size: 1.5em;
+#xWins {
+  color: #3989d4;
 }
 
-#oWins span {
-  color: rgb(224, 18, 18);
-  font-size: 1.5em;
+#oWins {
+  color: #39bcd4;
 }
 
 table {
-  background-color: black;
   border-collapse: collapse;
+  border: hidden;
   margin: 0 auto;
 }
 
@@ -59,21 +72,26 @@ td {
   height: 120px;
   text-align: center;
   vertical-align: middle;
-  border: 3px solid white;
+  border: 2px solid rgb(170, 170, 170);
 }
 
 .x {
-  color: blue;
-  font-size: 4em;
+  color: #3989d4;
 }
 
 .o {
-  color: red;
-  font-size: 4em;
+  color: #39bcd4;
+}
+
+.x,
+.o {
+  font-size: 6rem;
+  font-weight: 600;
 }
 
 .win {
-  background-color: #1b98e0;
+  background-color: #f9f871;
+  border-radius: 50%;
 }
 
 .gameContainer {
@@ -82,14 +100,20 @@ td {
 }
 
 #resetContainer {
-  margin-top: 3%;
+  margin-top: 30px;
   text-align: center;
 }
 
 #resetBtn {
-  background-color: #247ba0;
+  background-color: #a4b5b8;
   color: white;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
 
-  padding: 10px 20px;
-  font-size: 1.6em;
+#resetBtn i {
+  font-size: 1.7rem;
 }
